@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ir.gov.tax.tpis.sdk</groupId>
+    <artifactId>tax-collect-data-sdk</artifactId>
+    <version>0.0.25</version>
+
+    <modules>
+        <module>transfer</module>
+        <module>content</module>
+        <module>utils</module>
+        <module>sample</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <name>Tax Collect Data SDK</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+
+    <distributionManagement>
+        <repository>
+            <id>${env.MAVEN_REPO_ID}</id>
+            <url>${env.MAVEN_RELEASE_PUBLISH_URL}</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>${env.MAVEN_REPO_ID}</id>
+            <url>${env.MAVEN_SNAPSHOT_PUBLISH_URL}</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+    <scm>
+        <connection>scm:git:https://github.com/SoftwareNasr/ir.gov.tax.tpis.sdk.git</connection>
+        <developerConnection>scm:git:https://github.com/SoftwareNasr/ir.gov.tax.tpis.sdk.git</developerConnection>
+        <url>scm:git:https://github.com/SoftwareNasr/ir.gov.tax.tpis.sdk.git</url>
+        <tag>ir.gov.tax.tpis.sdk</tag>
+    </scm>
+    </project>
